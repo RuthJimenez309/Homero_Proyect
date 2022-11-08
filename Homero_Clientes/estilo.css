@@ -1,0 +1,176 @@
+
+body{
+    margin:0;
+    padding: 0;
+    background-color:#FFC2B2;
+
+}
+
+.encabezado{
+    background-color:#FEBB22;
+     margin: 0%;
+    width:100% ;
+    box-sizing: border-box;
+   }
+
+.buscador{
+    padding: 0;
+    margin: 0; 
+    
+   }
+
+
+@media (max-width: 360px){
+   
+    /*Color icono bars */
+    .fa-bars{
+        color: #FFFFFF;
+        size: 10px;    
+    }
+     /*Color icono lupa */
+    .fa-solid{
+        color: #FFFFFF;
+        size: 10px;
+    }
+    /*Color icono boton  */
+    .btn {
+        color: #FFFFFF;
+        size: 10px;}
+    
+}
+
+#lupa
+{
+    display: flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+    
+    
+}
+
+#barra{
+    padding: auto;
+    margin-right :1.5rem; 
+    color: #FFFFFF;
+    
+
+}
+
+#botton{
+    color: #FFFFFF;
+    margin:10%;
+    width: 20%;
+}
+
+ /*cars*/
+.CalificacionFood{
+    color: #FEBB22;
+   
+
+   
+}
+
+.cardFood{
+    background-color: #FFFFFF;
+    padding: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+   
+}
+
+.contenedor{
+    padding: 1rem;
+    margin: 0%;
+   
+}
+
+.imgFood{
+    width: 60%;
+   
+   
+}
+
+.inputbuscador{
+    height: 2rem;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid white;
+
+   }
+ 
+   .inputbuscador:focus{
+    border: 3px dotted  #FEBB22;
+    box-shadow: 0px 0px 10px 5px #FFC2B2;
+   }
+
+
+
+
+.imgperfil{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin-left: 1.5rem;
+   }
+
+.celda{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.textoEmpresa{
+    text-align: left;
+    color: #6C6966;
+    font-family: sans-serif;
+    font-style: bold;
+   
+}
+
+.card-text{
+    text-align: center;
+
+}
+
+ /*Login */
+.formulario{
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+   
+}
+
+.botonEmail{
+    
+    background-color: #FFFFFF;
+    
+   
+}
+
+.botonInicio {
+    border: 3px dotted  #FEBB22;
+    background-color: #FEBB22;
+    width: 8rem;
+    border-radius: 20px;
+    align-content: center;
+    align-items: center;
+
+    
+}
+
+.login{
+    color: #6C6966;
+    font-family: sans-serif;
+    font-style: bold;
+    text-align: left;
+
+    
+}
+.C{
+    color: #6C6966;
+}
+
