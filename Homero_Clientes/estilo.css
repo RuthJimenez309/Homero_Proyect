@@ -148,7 +148,7 @@ body{
     
     background-color: #FFFFFF;
     
-   
+
 }
 
 .botonInicio {
@@ -174,3 +174,122 @@ body{
     color: #6C6966;
 }
 
+ /*tarjeta */
+ .tarjetas{
+    width: 5rem;
+    text-align: center;
+ }
+ 
+ .tarjetas-2{
+     width: 4rem;
+     text-align: center;
+  }
+ 
+
+ /* menu */
+ .menu {
+    width: 0;
+    border-radius:20px ;
+    background-color: #FFFFFF;
+    color: #6C6966;
+
+ }
+ 
+ .navegacion {
+    background-color: #FFFFFF;
+ }
+ 
+  /* menu */
+
+ /* Targeta de pago */
+
+ .imagen-tarjeta{
+    width: 9rem; 
+ }
+
+  /* imagen de la tarjeta  */
+
+ .text-tarjeta{
+     color: #FFFFFF;
+     width: 183px;
+     height: 29px;
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 29px;
+     text-align: end;
+     /* identical to box height */
+     
+    
+ }
+ 
+ .text-imagen{
+    text-align: center;
+    margin-bottom:2rem;
+ }
+ 
+ .text-pago{
+    width: 47px;
+    height: 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: flex-end;
+    color: #23033D;
+    
+ }
+ /*tarjeta */
+ .numero-tarjeta{
+    width: 113px;
+    height: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    color: #23033D;  
+ }
+
+ .btn-ccv{
+    width: 113px;
+    height: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    color: #23033D;  
+ }
+ 
+
+  /*Boton pago */
+
+ .botonpago{
+    width: 271px;
+    height: 31px;
+    background: #D9D9D9;
+    border-radius: 7rem;
+    
+ }
+ 
+ .btn-enviar{
+    background:  #FEBB22;
+    border-radius: 20px;
+    align-content: center;
+    align-items: center;
+    
+    
+    
+ }
+
+ .btn-enviar{
+   color: #FFFFFF;;
+ }

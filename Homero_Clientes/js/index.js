@@ -37,8 +37,17 @@ var inicio =[
 
 //Ocultar  las  Cards por medio del ID que se  añadio en  html por ejemplo Producto
 //
+document.getElementById("inicio").style.display = "none";
+document.getElementById("head").style.display = "none";
+document.getElementById("lendingPage").style.display = "none";
+document.getElementById("menu").style.display = "none";
 document.getElementById("productos").style.display = "none";
-document.getElementById("formulario").style.display = "none";
+document.getElementById("detalle-comida").style.display = "none";
+document.getElementById("detalleProducto").style.display = "none";
+document.getElementById("").style.display = "none";
+
+
+
     
 //Mostrar LogosCards
 var productos=[
