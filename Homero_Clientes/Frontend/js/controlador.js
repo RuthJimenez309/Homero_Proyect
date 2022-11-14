@@ -154,9 +154,12 @@ function modalInicio () {
         document.getElementById ('modalInicio').innerHTML += `
         <div class="modal-container ">
     <form id="formularioInicio" class="modal-form" onsubmit="noRecargo(event)">
-    <h5>Inicio de sesión</h5>
-    <input id="mail" class="mt-2" type="text">
-    <input type="password" id="pass" class="mt-2" type="text">
+    <div class="log">
+    <h5 class="login">Login</h5></div>
+    <h2 class="cc">Email</h2>
+    <input id="mail" class="mt-2  email" type="text">
+    <h2 class="cc">Contraseña</h2>
+    <input type="password" id="pass" class="mt-2 password" type="text">
     <button class="btn-modal" onclick="selecionContenido(1),selecionContenido(5), generarEmpresa()">Iniciar sesión</button>
     </form>
   </div> `
