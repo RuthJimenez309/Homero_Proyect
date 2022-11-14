@@ -4,342 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--FontAwesome-->
-    <script src="https://kit.fontawesome.com/ea4f1e8a3a.js" crossorigin="anonymous"></script>
-
-     <!--Bootstrap-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-     <link rel="stylesheet" href="Frontend/css/estilos.css">
-     <link rel="stylesheet" href="estilo.css">
-     <link rel="stylesheet" href="../Frontend/css/estilos.css">
-     <title>Cliente</title>
-
+    <title>Clientes</title>
+    <!--css-->
+    <link rel="stylesheet" href="Frontend/css/estilos.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/dbb994acbb.js" crossorigin="anonymous"></script>
 </head>
-
-  <body>
-
-    <!-- Encabezado -->
-    <div  class="encabezado" id="head">
-        <div class="contenedor">
-        <div class="celda"> 
-          <i  id="barra" class="fa-solid   fa-bars"></i> 
-          <div class="  buscador">
-            <!-- input cambiar-->
-            <input type="text" placeholder="search" class="inputbuscador">
-          </div>
-          <i id="lupa" class="fa-solid fa-magnifying-glass  ml-auto"></i>   
-          <!--Perfil de los usuarios -->            
-          <div class="Perfil">
-            <img  class="imgperfil" src="../Frontend/img/usuarios/pan.png  " alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-    <!-- pagina 1, lending page -->
-      <!--Div principal de publicidad de la app-->
-  <div id="lendingPage">
+<body class="body-color">
+    <!--Navbar principal-->
+    <section id="contenido-1">
+        <nav class="navbar nav-color">
+            <div class="container-fluid">
+                <div class="">
+                    <button type="button" class="fa-solid fa-bars btn-style"  data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                    </button>
+                    <ul class="dropdown-menu menu">
+                      <li onclick="GeneraNotificaciones(), opcionesSubmenu(1)"><a class="dropdown-item " href="#"><i class="fa-solid fa-bell icon"></i>Notificaciones</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-group icon"></i>Invitar a un amigo</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-question icon"></i>Soporte</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear icon"></i>Configuración</a></li>
+                      <li><a class="dropdown-item" href="index.html"><i class="fa-solid fa-arrow-right-from-bracket icon"></i>Cerrar sesión</a></li>
+                      <li><a class="dropdown-item" href="#">Menu item</a></li>
+                      <li><a class="dropdown-item" href="#">Menu item</a></li>
+                      <li><a class="dropdown-item" href="#">Menu item</a></li>
+                      <li><a class="dropdown-item" href="#">Menu item</a></li>
+                    </ul>
+                  </div>
+                  
+                  
+            </div>
+          </nav>
+        </section>
+        <!--Contenido principal-->
+<!--Section de contenido pricipal all-->
+<section id="contenido-all-principal">
+<section id="contenido-2">
     <div class="div-public1">
-      <img class="img-log" src="../Frontend/img/logo/1.logo.png" alt="">
-      <img class="img-public" src="../Frontend/img/publicidad/1.public.jpg" alt="">
+      <img class="img-log" src="Frontend/img/logo/1.logo.png" alt="">
+      <img class="img-public" src="Frontend/img/publicidad/1.public.jpg" alt="">
     </div>
-
+  
     <div class="div-homer">
       <div class="text-colorA">
         <h3>Comienza</h3>   
         <p>Lorem ipsum dolor sit amet.</p>
         <div class="div-inicio">
-          <button class="btn-inicio">Registrarse</button>
-          <button class="btn-inicio">Inciar sesión</button>
+          <button id="opcion-registro" class="btn-inicio opcion" onclick="modalRegistro(), selecionContenido(4)">
+            Registrarse</button>
+          <button id="opcion-inicio" class="btn-inicio opcion" onclick="modalInicio(), selecionContenido(3) " onchange="">
+            Inciar sesión
+      
+          </button>
         </div>
+       
       </div>
-    
+     
       <div class="">
-        <img class="img-publiH" src="../Frontend/img/publicidad/2.public.jpg" alt="">
+        <img class="img-publiH" src="Frontend/img/publicidad/2.public.jpg" alt="">
       </div>
       
-      </div>
-      <div>
+    </div>
+    <div>
       <div class="div-public3">
-        <img class="img-public" src="../Frontend/img/publicidad/3.public.jpg" alt="">
+        <img class="img-public" src="Frontend/img/publicidad/3.public.jpg" alt="">
         <p class="text-colorB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, earum.</p>
-      </div> 
+      </div>
+      
     </div>
-
-
-    <footer class="footer-A">
-      <i class="fa-brands fa-instagram" >Instagram</i>
-      <i class="fa-brands fa-facebook">Facebook</i>
-      </footer>
-    </div>   
-  <!--  pagina 1, lending page -->
-
-
-  <!--2 Pagina, Modal para iniciar 
-    seccion acumular en el Js, id="inicio" -->
-    <div class=" contenedor ">
-    <div class="row" id="inicio">
-      <form  class="formulario">
-        <div>
-        <h1 class="login">Login </h1>
-          <div class="contenedor" style="width:1rem;">
-          <div class="input-contenedor">
-            <h2 class=" cc">Correo</h2>
-          <input class="  botonEmail" type="text" placeholder=""> 
-            <h2 class="cc">Contraseña</h2>
-          <input class="botonPassword" type="password" placeholder="">
-          <br>
-          <br>
-          <input class="Ellipse" type="" placeholder="">
-          <h2 class="rr">Recuerdame</h2>
-          </div>
-
-          <br>
-          <input class="control  botonInicio" type="button" value="Iniciar Sesion">
-          <a class="dropdown-item" href="index.html"></a>
-        </div>
-    </form>  
-    </div>
-  </div>
-   <!--2 Pagina -->
-
-
-      <!--3 Pagina, Menu de inicio acumular en el Js-->
-    <div class=" contenedor-menu"  id="menu">
-       <div class="row" >
-              <!--Navbar principal-->
-        <section>
-            <nav class=" navegacion">
-            <div class="  menu-nav ">
-                <div class="">
-                    <button type="button" class="fa-solid fa-bars btn-style " 
-                    data-bs-toggle="dropdown" aria-expanded="false"></button>
-                    <ul class="dropdown-menu barra-menu"><li><a class="dropdown-item "
-                      href="#"><i class="fa-regular fa-bell"></i>  1 Notificaciones</a></li>
-                    <li><a class="dropdown-item" 
-                      href="#"><i class="fa-solid fa-bag-shopping"></i> 2 Mis pedidos</a></li>
-                    <li><a class="dropdown-item" 
-                      href="#"><i class="fa-solid fa-ticket"></i> 3 Cupones</a></li>
-                    <li><a class="dropdown-item" 
-                      href="#"><i class="fa-solid fa-credit-card"></i> 4 Pagos online</a></li>
-                      <li><a class="dropdown-item "
-                      href="#"><i class="fa-regular fa-bell"></i>  5 Seguridad</a></li>
-                      <li><a class="dropdown-item "
-                        href="#"><i class="fa-solid fa-shield"></i>  6 Ayuda</a></li>
-                      <li><a class="dropdown-item "
-                        href="#"><i class="list-group-item"></i>  7 Cancel</a></li>
-                        <li><a class="dropdown-item " href="#"><i class="fa-regular fa-bell"></i>  8 ayuda</a></li>
-                        <br>
-                    <li><a class="dropdown-item" href="index.html">
-                      <i class="fa-solid fa-arrow-right-from-bracket icon"></i> 9 Cerrar sesión</a></li>
-                  </ul>
-                  </div> 
-              </div>
-          </nav>
-        </section>
-       </div>
-    </div>
-    <!--3 Pagina, Menu -->
-
-
   
-    <!--4 Pagina, Card  de productos acumulados en el Js/Empresas-->
-      <div class=" contenedor">
-        <div class="row" id="productos">
+  </section>
+
+  <!--Modal para mostrar usuario y formulario--> 
+<section id="contenido-3">
+    <div id="modalInicio" class="modal-inicio">
+  
+    </div>
+  </section>
+  <section id="contenido-4">
+    <div id="modalRegistro" class="modal-inicio">
+  
+    </div>
+  </section>
+  
+  <!--  -->
+  <!--Contenido 5 para la generar los empresas -->
+  <section id="contenido-5">
+    <div class=" contenedor">
+        <div class="row" id="empresa">
           
         </div>
       </div>
-
-     <!--4 Pagina, Card  de productEmpresas-->
-
-  <!--5  Pagina, Modal para el detalle del prodcto,  Js-->
-  <div class=" contenedor" id="detalle-producto">
-        <div id="detalle-comida" class="row">
-
-          <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
-            <div class="card-content">
-            <!-- 1  -->
-              <div class="card-text">
-                <h4>KING JR. HAMBURGUES </h4>
-                <H5>INCLUYE PAPA + BEBIDA</H5>
-                <p> Carne de res asada a la parrilla, pepinillos,
-                  cebolla, tomate, lechuga, kétchup y
-                  mayonesa en pan con semillas de ajonjolí.
-                </p>
-                    <div class="card-imagen">
-                    <img src="../Frontend/img/Food/1.king.png" alt="">
-                   </div>
-                   <br>
-               <!--fALTA BOTON DE CANTIDA  -->
-                <input class="control  botonInicio" type="button" value="Ordenar"> 
-                <br>
-                <br>
-              </div>
-            </div>
-        </div>
-
-        <!--  -->
-      <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
-        <div class="card-content">
-          <!-- 2 -->
-          <div class="card-text">
-            <h4>KING JR. HUMBURGUESA</h4>
-            <H5>INCLUYE PAPA + BEBIDA</H5>
-            <p> Combo infantail incluye humburguesa 
-              con  una tarto de carne de res asada 
-              a la parrilla, queso americano, pepinillo
-              mostaza y salsa de tomate,incluye un juguete de 
-              temporada 
-            </p>
-           
-            <div class="card-imagen">
-              <img src="../Frontend/img/Food/3.whopper.png" alt="">
-              </div>
-              <br>
-             <!--fALTA BOTON DE CANTIDA  -->
-
-              <!--Burger king CAMBIARLE LA CLAS POR BOTON ORDENAR -->
-            <input class="control  botonInicio" type="button" value="Ordenar"> 
-            <br>
-            <br>
-           </div>
-        </div>
-    </div>
-  
-    
-    <!-- 3-->
-    <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
-      <div class="card-content">
-        <div class="card-text">
-          <h4>SUNDAE</h4>
-          <p>Helado de crema con salsa de fresa,
-             chocolate ó caramelo. </p>
-          <div class="card-imagen">
-          <img src="../Frontend/img/Food/2.sundae.png" alt="">
-          <br>
-          </div>
-          <br>
-
-           <!--fALTA BOTON DE CANTIDA  -->
-
-          <!--Burger king CAMBIARLE LA CLAS POR BOTON ORDENAR -->
-          <input class="control  botonInicio" type="button" value="Ordenar"> 
-          <br>
-          <br>
-        </div>
-      </div>
-  </div>
-    <!--FINAL DE DETALLE MENU-->
-  </div>
-  <!--FINAL DE DETALLE MENU-->
-
-
-  <!--6 Pagina, Modal para el detalle de ORDENES  Js trabajar en esta-->
-  <div class="row" id="detalleProducto">
-     <h4 class="dp-h1"> Natalia,  son tus ordenes</h4>
-      <div  class="row">
-      <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
-       <div class="card-content">
-            <!--1-->
-            <div class="card-text">
-              <h4 class="dp-h1">KING JR. HUMBURGUESA</h4>
-              <H5 class="dp-h1">INCLUYE PAPA + BEBIDA</H5>
-              <p class="dp-pp"> Combo infantail incluye humburguesa 
-                con  una tarto de carne de res asada 
-                a la parrilla, queso americano, pepinillo
-                mostaza y salsa de tomate,incluye un juguete de 
-                temporada 
-              </p>
-              <br>
-                <!--precio -->
-              <p class="dp-p">precio 192,00</p>
-            </div>
-          </div>
-        </div>
-
-     <!--2-->
-      <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
-      <div class="card-content">
-        <div class="card-text">
-           <!-- 3  -->
-          <h4 class="dp-h1">KING JR. HUMBERGESA</h4>
-          <H5 class="dp-h1">INCLUYE PAPA + BEBIDA</H5>
-          <p  class="dp-pp">
-             Combo infantil incluye una hamburguesa 
-            con una torta de carne de res asada a la
-            parrilla, queso americano, pepinillo,mostaza
-            y salsa de tomate. Incluye un juguete de 
-            temporada.</p>
-          <!--precio -->
-          <p  class="dp-p">precio 99,00</p>
-        </div>
-       </div>
-      </div>
-
-       <!--3-->
-            </div>
-            <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
-              <div class="card-content">
-                <div class="card-text"> 
-                  <h4 class="dp-h1">SUNDAE</h4>
-                  <p  class="dp-pp"> Helado de crema con salsa de fresa, 
-                    chocolate ó caramelo.</p>
-                  <p  class="dp-p">precio 35,00</p>
-                </div>
-              </div>
-          </div>
-    </div> 
-  </div>
-
- <!--5 Pagina, Modal para el detalle de ORDENES  Js-->
-
-
-
-  <!--7 Pagina, Modal para targeta de pago, Js-->
-  <div id="credicard">
-        <div class="text-imagen" style="text-align:center;">
-        <h6 class="text-tarjeta"> Agregar Tarjeta</h6>
-        <img src="../Frontend/img/Food/2.card.png"  class="imagen-tarjeta" alt="">
-        </div>
-      <div class="card m-3  " id="empresa-1" onclick="seleccionEmpresa()">
-      <div class="card-content">
-      <div class="contenedor" id="ocultar">
-          <section class="logo-tarjeta">
-            <div class=""> 
-            <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
-              <div class="grupo">
-                <h4 class="text-pago">Pago</h4>
-                <br>
-                <!--numero tarjeta -->
-                <label for="inputNumero"  class="numero-tarjeta">Número Tarjeta</label>
-                <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
-                </div>
-                <br>
-                <!--ccv -->
-                <div class="grupo ccv">
-                    <label for="inputCCV"  class="btn-ccv">CCV</label>
-                    <input type="text" id="inputCCV" maxlength="3">
-                  </div>
-                </div>
-                <br>
-                <button type="submit" class="btn-enviar">Finalizar Orden</button>
-            </form> 
-        </section>
-      </div>
-      </div>
-      </div>
-  </div>
-
-  <!--Por todo tenemos 7 secciones -->
-
-
-
-
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-          <script src="js/controlador.js"></script>
-          <script src="js/index.js"></script>
+  </section>
+   <!--Contenido 6 para la generar los productos -->
+   <section id="contenido-6">
+    <div class=" contenedor">
+        <div class="row" id="prod">
           
-  </body>
+        </div>
+      </div>
+  </section>
+</section>
+<!--***SUBMENÚ CONTENIDOS***-->
+<!--opcion notificaciones-->
+<section id="sub-notificacion">
+
+</section>
+<!--opcion 2-->
+<section id="sub-opcion2">
+
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="Frontend/js/controlador.js"></script>
+</body>
 </html>
