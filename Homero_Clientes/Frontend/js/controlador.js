@@ -4,27 +4,27 @@ var empresas=[
     //card Logo 
     { 
       nombreEmpresa:   ' Little Seasar ',  
-      urlImage:  '../Frontend/img/Food/1.res.png', 
+      urlImage:  '../Homero_Clientes/Frontend/img/empresas/1.res.png', 
       calicacion:'3', 
  
     }, 
     //card logo 
     {   
         nombreEmpresa:   ' KFC',  
-        urlImage:  '../Frontend/img/Food/2.res.png', 
+        urlImage:  '../Homero_Clientes/Frontend/img/empresas/2.res.png', 
         calicacion:'4', 
     }, 
     //card Logo 
     {    
         nombreEmpresa:   ' Burger King',  
-        urlImage:  '../Frontend/img/Food/3.res.png', 
+        urlImage:  '../Homero_Clientes/Frontend/img/empresas/3.res.png', 
         calicacion:'5', 
     }, 
  
      //card Logo 
      {   
         nombreEmpresa:   ' Taco Bell',  
-        urlImage:  '../Frontend/img/Food/4.res.png', 
+        urlImage:  '../Homero_Clientes/Frontend/img/empresas/4.res.png', 
         calicacion:'4', 
     }, 
  
@@ -34,21 +34,21 @@ var empresas=[
 var productos=[ 
     //card Logo 
     { 
-      nombreProductos:   ' Whopper ',  
-      urlImage:  '../Frontend/img/Food/1.res.png', 
+      nombreProductos:   ' CheesePiza ',  
+      urlImage:  '../Homero_Clientes/Frontend/img/productos/3.food.png', 
       calicacion:'3', 
  
     }, 
     //card logo 
     {   
         nombreProductos:   ' Sundae',  
-        urlImage:  '../Frontend/img/Food/2.res.png', 
+        urlImage:  '../Homero_Clientes/Frontend/img/productos/2.sundae.png', 
         calicacion:'4', 
     }, 
     //card Logo 
     {    
         nombreProductos:   ' Whopper jr',  
-        urlImage:  '../Frontend/img/Food/3.res.png', 
+        urlImage:  '../Homero_Clientes/Frontend/img/productos/3.whopper.png', 
         calicacion:'5', 
     }, 
  
@@ -180,7 +180,7 @@ function modalRegistro () {
 function noRecargo(event){
     event.preventDefault();
 }
-//Genera las categorías 
+//Genera las categorías Empresa
 function generarEmpresa() { 
     document.getElementById('empresa').innerHTML = ''; 
     empresas.forEach(function (emp) { 
