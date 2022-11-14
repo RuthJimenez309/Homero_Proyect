@@ -285,11 +285,79 @@ body{
     border-radius: 20px;
     align-content: center;
     align-items: center;
-    
-    
-    
  }
 
  .btn-enviar{
-   color: #FFFFFF;;
+   color: #FFFFFF;
  }
+
+ /*pagina 6 detalle del prodcto*/
+
+.dp-h1{
+  /* Natalia, estas son tus ordenes */
+width: 274px;
+height: 24px;
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+letter-spacing: 0.02em;
+color: #6C6966;
+}
+
+.dp-pp{
+    width: 203px;
+    height: 60px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    color: #6C6966;
+    
+  }
+  
+  .dp-p{
+    width: 101px;
+    height: 18px;
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    letter-spacing: 0.02em;  
+    color: #F9AA13;
+    text-align: right;
+  }
+
+ /*Nav menu */
+  .menu-nav{
+    align-items: center;
+    width: 2rem;
+    width: 1rem;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #6C6966;
+  }
+
+
+.contenedor-menu{
+width: 0rem;
+height: 0rem;
+}
+
+.btn-style{ 
+   width: 1rem !important; ;
+    height: 1rem ;
+    background-color:#6C6966 !important; 
+}
+

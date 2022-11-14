@@ -1,6 +1,16 @@
+//Ocultar  las  Cards por medio del ID que se  añadio en  html , tenemos 7 
+//
+document.getElementById("inicio").style.display = "none";
+document.getElementById("head").style.display = "none";
+document.getElementById("lendingPage").style.display = "none";
+document.getElementById("menu").style.display = "none";
+document.getElementById("productos").style.display = "none";
+document.getElementById("detalle-comid").style.display = "none";
+document.getElementById("detalleProducto").style.display = "none";
+document.getElementById("credicard").style.display = "none";
 
 
-//Mostrar usaurio solo muestra un usuario que es Pan
+//pagina 4,Mostrar usaurio solo muestra un usuario que es Pan
 var usuarios=[
     //user
     {
@@ -35,20 +45,12 @@ var inicio =[
 
 ]
 
-//Ocultar  las  Cards por medio del ID que se  añadio en  html por ejemplo Producto
-//
-document.getElementById("inicio").style.display = "none";
-document.getElementById("head").style.display = "none";
-document.getElementById("lendingPage").style.display = "none";
-document.getElementById("menu").style.display = "none";
-document.getElementById("productos").style.display = "none";
-document.getElementById("detalle-comida").style.display = "none";
-document.getElementById("detalleProducto").style.display = "none";
-document.getElementById("").style.display = "none";
 
 
 
-    
+
+
+
 //Mostrar LogosCards
 var productos=[
     //card Logo
@@ -122,20 +124,58 @@ generarProductos();
 
  }
 
-//Esto es de la card
+//mostrar la pagina 4
+function generarMenu(){
+let usaurio; 
+document.getElementById('menu').innerHTML =+ 
+      `<div class="row" >
+        <section>
+            <nav class=" navegacion">
+            <div class="  menu-nav ">
+                <div class="">
+                    <button type="button" class="fa-solid fa-bars btn-style" 
+                    data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    <ul class="dropdown-menu menu"><li><a class="dropdown-item "
+                      href="#"><i class="fa-regular fa-bell"></i>  1 Notificaciones</a></li>
+                    <li><a class="dropdown-item" 
+                      href="#"><i class="fa-solid fa-bag-shopping"></i> 2 Mis pedidos</a></li>
+                    <li><a class="dropdown-item" 
+                      href="#"><i class="fa-solid fa-ticket"></i> 3 Cupones</a></li>
+                    <li><a class="dropdown-item" 
+                      href="#"><i class="fa-solid fa-credit-card"></i> 4 Pagos online</a></li>
+                      <li><a class="dropdown-item "
+                      href="#"><i class="fa-regular fa-bell"></i>  5 Seguridad</a></li>
+                      <li><a class="dropdown-item "
+                        href="#"><i class="fa-solid fa-shield"></i>  6 Ayuda</a></li>
+                      <li><a class="dropdown-item "
+                        href="#"><i class="list-group-item"></i>  7 Cancel</a></li>
+                        <li><a class="dropdown-item " href="#"><i class="fa-regular fa-bell"></i>  8 ayuda</a></li>
+                        <br>
+                    <li><a class="dropdown-item" href="index.html">
+                      <i class="fa-solid fa-arrow-right-from-bracket icon"></i> 9 Cerrar sesión</a></li>
+                  </ul>
+                  </div> 
+              </div>
+          </nav>
+        </section>
+      </div>
+      `;
+  }
+  
+  generarMenu();
+  function validarCampo(id){
+     let campo = document.getElementById(id);
+     
+ 
+  }
+  
 
-//ocultar Usuarios
-function cargarPerfil () {
+  
+  //mostrar la pagina 5
+function generarDetalleProducto(){
+document.getElementById('detalle-producto').innerHTML =+ 
+      `
 
-    for (var i = 0; i < users.length; i++) {
-        console.log(users[i]);
-        document.getElementById("lista-Perfil").innerHTML +=
-            `<div class="Perfil" onclick="PerfilActual(${Perfil[i].id})">
-                        <img src="src/img/${Perfil[i].imagenPerfil}">
-                        <div class="etiqueta">${Perfil[i].nombre}</div>
-                    </div>`;
-    }
-}
-//ocultar Usuarios
-
+      `;
+  }
 

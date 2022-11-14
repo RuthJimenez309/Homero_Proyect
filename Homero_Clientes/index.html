@@ -72,7 +72,7 @@
       <i class="fa-brands fa-facebook">Facebook</i>
       </footer>
     </div>   
-
+  <!--  pagina 1, lending page -->
 
 
   <!--2 Pagina, Modal para iniciar 
@@ -95,43 +95,45 @@
     </form>  
     </div>
   </div>
+   <!--2 Pagina -->
 
 
       <!--3 Pagina, Menu de inicio acumular en el Js-->
-    <div class=" contenedor  menu"  id="menu">
-    <div class="row" >
-      <!--Navbar principal-->
+    <div class=" contenedor-menu"  id="menu">
+       <div class="row" >
+              <!--Navbar principal-->
         <section>
-        <nav class=" navegacion">
-              <div class="  menu-nav ">
-                  <div class="">
-                      <button type="button" class="fa-solid fa-bars btn-style" 
-                      data-bs-toggle="dropdown" aria-expanded="false"></button>
-                      <ul class="dropdown-menu menu"><li><a class="dropdown-item "
-                        href="#"><i class="fa-regular fa-bell"></i>  1 Notificaciones</a></li>
-                      <li><a class="dropdown-item" 
-                        href="#"><i class="fa-solid fa-bag-shopping"></i> 2 Mis pedidos</a></li>
-                      <li><a class="dropdown-item" 
-                        href="#"><i class="fa-solid fa-ticket"></i> 3 Cupones</a></li>
-                      <li><a class="dropdown-item" 
-                        href="#"><i class="fa-solid fa-credit-card"></i> 4 Pagos online</a></li>
-                        <li><a class="dropdown-item "
-                        href="#"><i class="fa-regular fa-bell"></i>  5 Seguridad</a></li>
-                        <li><a class="dropdown-item "
-                          href="#"><i class="fa-solid fa-shield"></i>  6 Ayuda</a></li>
-                        <li><a class="dropdown-item "
-                          href="#"><i class="list-group-item"></i>  7 Cancel</a></li>
-                          <li><a class="dropdown-item " href="#"><i class="fa-regular fa-bell"></i>  8 ayuda</a></li>
-                          <br>
-                      <li><a class="dropdown-item" href="index.html">
-                        <i class="fa-solid fa-arrow-right-from-bracket icon"></i> 9 Cerrar sesión</a></li>
-                    </ul>
-                    </div> 
-                </div>
-            </nav>
-          </section>
-        </div>
+            <nav class=" navegacion">
+            <div class="  menu-nav ">
+                <div class="">
+                    <button type="button" class="fa-solid fa-bars btn-style " 
+                    data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    <ul class="dropdown-menu barra-menu"><li><a class="dropdown-item "
+                      href="#"><i class="fa-regular fa-bell"></i>  1 Notificaciones</a></li>
+                    <li><a class="dropdown-item" 
+                      href="#"><i class="fa-solid fa-bag-shopping"></i> 2 Mis pedidos</a></li>
+                    <li><a class="dropdown-item" 
+                      href="#"><i class="fa-solid fa-ticket"></i> 3 Cupones</a></li>
+                    <li><a class="dropdown-item" 
+                      href="#"><i class="fa-solid fa-credit-card"></i> 4 Pagos online</a></li>
+                      <li><a class="dropdown-item "
+                      href="#"><i class="fa-regular fa-bell"></i>  5 Seguridad</a></li>
+                      <li><a class="dropdown-item "
+                        href="#"><i class="fa-solid fa-shield"></i>  6 Ayuda</a></li>
+                      <li><a class="dropdown-item "
+                        href="#"><i class="list-group-item"></i>  7 Cancel</a></li>
+                        <li><a class="dropdown-item " href="#"><i class="fa-regular fa-bell"></i>  8 ayuda</a></li>
+                        <br>
+                    <li><a class="dropdown-item" href="index.html">
+                      <i class="fa-solid fa-arrow-right-from-bracket icon"></i> 9 Cerrar sesión</a></li>
+                  </ul>
+                  </div> 
+              </div>
+          </nav>
+        </section>
+       </div>
     </div>
+    <!--3 Pagina, Menu -->
 
 
   
@@ -142,64 +144,38 @@
         </div>
       </div>
 
-
+     <!--4 Pagina, Card  de productEmpresas-->
 
   <!--5  Pagina, Modal para el detalle del prodcto,  Js-->
-  <div class=" contenedor">
+  <div class=" contenedor" id="detalle-producto">
         <div id="detalle-comida" class="row">
-            <!-- 1 CAJOTA FELIZBurger king -->
+
           <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
             <div class="card-content">
-              <div class="card-imagen">
-                <img src="../" alt="">
-              </div>
+            <!-- 1  -->
               <div class="card-text">
-                <h4>KING JR. HUMBURGUESA</h4>
+                <h4>KING JR. HAMBURGUES </h4>
                 <H5>INCLUYE PAPA + BEBIDA</H5>
-                <p> Combo infantail incluye humburguesa 
-                  con  una tarto de carne de res asada 
-                  a la parrilla, queso americano, pepinillo
-                  mostaza y salsa de tomate,incluye un juguete de 
-                  temporada 
+                <p> Carne de res asada a la parrilla, pepinillos,
+                  cebolla, tomate, lechuga, kétchup y
+                  mayonesa en pan con semillas de ajonjolí.
                 </p>
-                <!--fALTA BOTON DE CANTIDA  -->
-
-                <!--Burger king CAMBIARLE LA CLAS POR BOTON ORDENAR -->
+                    <div class="card-imagen">
+                    <img src="../Frontend/img/Food/1.king.png" alt="">
+                   </div>
+                   <br>
+               <!--fALTA BOTON DE CANTIDA  -->
                 <input class="control  botonInicio" type="button" value="Ordenar"> 
+                <br>
+                <br>
               </div>
             </div>
         </div>
-        <!-- 2 CAJOTA FELIZBurger king -->
-        <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
-          <div class="card-content">
-            <div class="card-imagen">
-              <!--fALTA IMAGEM  -->
-              <img src="../" alt="">
-            </div>
-          
-            <div class="card-text">
-              <h4>KING JR. HUMBURGUESA</h4>
-              <H5>INCLUYE PAPA + BEBIDA</H5>
-              <p> Combo infantail incluye humburguesa 
-                con  una tarto de carne de res asada 
-                a la parrilla, queso americano, pepinillo
-                mostaza y salsa de tomate,incluye un juguete de 
-                temporada 
-              </p>
-              <!--fALTA BOTON DE CANTIDA  -->
 
-              <!--Burger king CAMBIARLE LA CLAS POR BOTON ORDENAR -->
-              <input class="control  botonInicio" type="button" value="Ordenar"> 
-            </div>
-          </div>
-      </div>
-    <!-- 3 CAJOTA FELIZBurger king -->
+        <!--  -->
       <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
         <div class="card-content">
-            <!--fALTA IMAGEM  -->
-          <div class="card-imagen">
-            <img src="../" alt="">
-          </div>
+          <!-- 2 -->
           <div class="card-text">
             <h4>KING JR. HUMBURGUESA</h4>
             <H5>INCLUYE PAPA + BEBIDA</H5>
@@ -209,45 +185,108 @@
               mostaza y salsa de tomate,incluye un juguete de 
               temporada 
             </p>
-            <!--fALTA BOTON DE CANTIDA  -->
+           
+            <div class="card-imagen">
+              <img src="../Frontend/img/Food/3.whopper.png" alt="">
+              </div>
+              <br>
+             <!--fALTA BOTON DE CANTIDA  -->
 
-            <!--Burger king CAMBIARLE LA CLAS POR BOTON ORDENAR -->
+              <!--Burger king CAMBIARLE LA CLAS POR BOTON ORDENAR -->
             <input class="control  botonInicio" type="button" value="Ordenar"> 
-          </div>
+            <br>
+            <br>
+           </div>
         </div>
     </div>
+  
+    
+    <!-- 3-->
+    <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
+      <div class="card-content">
+        <div class="card-text">
+          <h4>SUNDAE</h4>
+          <p>Helado de crema con salsa de fresa,
+             chocolate ó caramelo. </p>
+          <div class="card-imagen">
+          <img src="../Frontend/img/Food/2.sundae.png" alt="">
+          <br>
+          </div>
+          <br>
+
+           <!--fALTA BOTON DE CANTIDA  -->
+
+          <!--Burger king CAMBIARLE LA CLAS POR BOTON ORDENAR -->
+          <input class="control  botonInicio" type="button" value="Ordenar"> 
+          <br>
+          <br>
+        </div>
+      </div>
+  </div>
     <!--FINAL DE DETALLE MENU-->
   </div>
   <!--FINAL DE DETALLE MENU-->
 
+
   <!--6 Pagina, Modal para el detalle de ORDENES  Js trabajar en esta-->
   <div class="row" id="detalleProducto">
-    <div id="detalle-comida" class="row">
-      <h1>Natali esta es tu orden </h1>
-      <!-- 1 CAJOTA FELIZBurger king -->
-    <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
-      <div class="card-content">
-        <div class="card-imagen">
-          <img src="../" alt="">
+     <h4 class="dp-h1"> Natalia,  son tus ordenes</h4>
+      <div  class="row">
+      <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
+       <div class="card-content">
+            <!--1-->
+            <div class="card-text">
+              <h4 class="dp-h1">KING JR. HUMBURGUESA</h4>
+              <H5 class="dp-h1">INCLUYE PAPA + BEBIDA</H5>
+              <p class="dp-pp"> Combo infantail incluye humburguesa 
+                con  una tarto de carne de res asada 
+                a la parrilla, queso americano, pepinillo
+                mostaza y salsa de tomate,incluye un juguete de 
+                temporada 
+              </p>
+              <br>
+                <!--precio -->
+              <p class="dp-p">precio 192,00</p>
+            </div>
+          </div>
         </div>
-        <div class="card-text">
-          <h4>KING JR. HUMBURGUESA</h4>
-          <H5>INCLUYE PAPA + BEBIDA</H5>
-          <p> Combo infantail incluye humburguesa 
-            con  una tarto de carne de res asada 
-            a la parrilla, queso americano, pepinillo
-            mostaza y salsa de tomate,incluye un juguete de 
-            temporada 
-          </p>
-          <!--fALTA BOTON DE CANTIDA  -->
 
+     <!--2-->
+      <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
+      <div class="card-content">
+        <div class="card-text">
+           <!-- 3  -->
+          <h4 class="dp-h1">KING JR. HUMBERGESA</h4>
+          <H5 class="dp-h1">INCLUYE PAPA + BEBIDA</H5>
+          <p  class="dp-pp">
+             Combo infantil incluye una hamburguesa 
+            con una torta de carne de res asada a la
+            parrilla, queso americano, pepinillo,mostaza
+            y salsa de tomate. Incluye un juguete de 
+            temporada.</p>
           <!--precio -->
-          <p>precio 192,00</p>
+          <p  class="dp-p">precio 99,00</p>
         </div>
+       </div>
       </div>
-    </div>
+
+       <!--3-->
+            </div>
+            <div class="card m-3" id="empresa-1" onclick="seleccionEmpresa()">
+              <div class="card-content">
+                <div class="card-text"> 
+                  <h4 class="dp-h1">SUNDAE</h4>
+                  <p  class="dp-pp"> Helado de crema con salsa de fresa, 
+                    chocolate ó caramelo.</p>
+                  <p  class="dp-p">precio 35,00</p>
+                </div>
+              </div>
+          </div>
+    </div> 
   </div>
-  </div>
+</div>
+ <!--6 Pagina, Modal para el detalle de ORDENES  Js trabajar en esta-->
+
 
 
   <!--7 Pagina, Modal para targeta de pago, Js-->
