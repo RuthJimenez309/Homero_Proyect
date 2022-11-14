@@ -5,7 +5,7 @@ document.getElementById("head").style.display = "none";
 document.getElementById("lendingPage").style.display = "none";
 document.getElementById("menu").style.display = "none";
 document.getElementById("productos").style.display = "none";
-document.getElementById("detalle-comid").style.display = "none";
+document.getElementById("detalle-comida").style.display = "none";
 document.getElementById("detalleProducto").style.display = "none";
 document.getElementById("credicard").style.display = "none";
 

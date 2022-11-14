@@ -62,7 +62,7 @@ body{
     width: 20%;
 }
 
- /*cars*/
+ /*card  Producto*/
 .CalificacionFood{
     color: #FEBB22;
    
@@ -136,43 +136,106 @@ body{
 
  /*Login */
 .formulario{
-    text-align: center;
-    background-color: #FFFFFF;
-    padding: 5%;
-    margin-bottom: 5%;
-    border-radius: 20px;
+    width: 290px;
+    height: 319px;
+    background: #FFFFFF;
+    border-radius: 16px;
    
 }
 
-.botonEmail{
-    
-    background-color: #FFFFFF;
-    
-
-}
+ /*Inicio de la modal */
 
 .botonInicio {
     border: 3px dotted  #FEBB22;
     background-color: #FEBB22;
-    width: 8rem;
+    width: 14rem;
     border-radius: 20px;
-    align-content: center;
-    align-items: center;
+    align-items:center;    
+}
+
+.control.botonInicio {
+ width: 6rem;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: flex-end;
+color: #FFFFFF;
+    
 
     
 }
+
+ /*Inicio de la modal */
+
+ h1.login {
+    margin-top: 1rem;
+} 
+
 
 .login{
-    color: #6C6966;
-    font-family: sans-serif;
-    font-style: bold;
-    text-align: left;
 
-    
+width: 50px;
+height: 23px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: flex-end;
+color: #23033D;
 }
-.C{
-    color: #6C6966;
+/*Contraseña y correo de la modal */
+.cc{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    color: #23033D;
+ }
+
+ .botonEmail{
+    width: 12rem;
+    height: 31px;
+    background: #D9D9D9;
+    border-radius: 12px;
+ }
+
+ .botonPassword{
+    width: 12rem;
+    height: 34px;
+    background: #D9D9D9;
+    border-radius: 12px;
+ }
+
+
+ .Ellipse{
+position: absolute;
+width: 20px;
+height: 17px;
+background: #D9D9D9;
+
+ }
+ .rr{
+width: 76px;
+height: 16px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+color: #23033D;
 }
+h2.rr {
+    margin-left: 2rem;
+} 
 
  /*tarjeta */
  .tarjetas{
@@ -199,7 +262,7 @@ body{
     background-color: #FFFFFF;
  }
  
-  /* menu */
+
 
  /* Targeta de pago */
 
@@ -294,7 +357,7 @@ body{
  /*pagina 6 detalle del prodcto*/
 
 .dp-h1{
-  /* Natalia, estas son tus ordenes */
+  /* ordenes */
 width: 274px;
 height: 24px;
 font-family: 'Inria Sans';
