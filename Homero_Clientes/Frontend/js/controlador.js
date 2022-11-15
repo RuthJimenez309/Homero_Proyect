@@ -1,4 +1,6 @@
 //JSONS
+
+
 //Mostrar LogosCards 
 var empresas=[ 
     //card Logo 
@@ -14,6 +16,15 @@ var empresas=[
         urlImage:  '../Homero_Clientes/Frontend/img/empresas/2.res.png', 
         calicacion:'4', 
     }, 
+    
+
+     //card Logo 
+     {   
+        nombreEmpresa:   ' Taco Bell',  
+        urlImage:  '../Homero_Clientes/Frontend/img/empresas/4.res.png', 
+        calicacion:'4', 
+    }, 
+
     //card Logo 
     {    
         nombreEmpresa:   ' Burger King',  
@@ -21,42 +32,68 @@ var empresas=[
         calicacion:'5', 
     }, 
  
-     //card Logo 
-     {   
-        nombreEmpresa:   ' Taco Bell',  
-        urlImage:  '../Homero_Clientes/Frontend/img/empresas/4.res.png', 
-        calicacion:'4', 
-    }, 
- 
     
 ]; 
 //JSON PRODUCTOS
 var productos=[ 
-    //card Logo 
+    //card productos
     { 
-      nombreProductos:   ' CheesePiza ',  
+      nombreProductos:   ' Pizza de Jamon ',  
       urlImage:  '../Homero_Clientes/Frontend/img/productos/3.food.png', 
-      calicacion:'3', 
+      precio:'', 
  
     }, 
-    //card logo 
+    //card productos 
     {   
         nombreProductos:   ' Sundae',  
         urlImage:  '../Homero_Clientes/Frontend/img/productos/2.sundae.png', 
-        calicacion:'4', 
+        precio:'', 
+        descricion:'Helado de crema .', 
     }, 
-    //card Logo 
+    //card productos 
     {    
         nombreProductos:   ' Whopper jr',  
-        urlImage:  '../Homero_Clientes/Frontend/img/productos/3.whopper.png', 
-        calicacion:'5', 
+        urlImage:  '../Homero_Clientes/Frontend/img/productos/1.king.png', 
+        precio:'', 
     }, 
  
-     //card Logo 
+     //card productos
      {   
-        nombreProductos:   ' Burger',  
-        urlImage:  '../Frontend/img/Food/4.res.png', 
-        calicacion:'4', 
+        nombreProductos:   ' Wopper',  
+        detalle:  '../Homero_Clientes/Frontend/img/productos/3.whopper.png', 
+        precio:'', 
+    }, 
+ 
+    
+]; 
+
+var detallesproductos=[ 
+    //card detallesproductos
+    { 
+      nombreProductos:   ' Pizza de Jamon ',  
+     detalle:  ' Pizza gigante de jamon y queso', 
+      precio:'120.oo', 
+ 
+    }, 
+    //card detallesproductos
+    {   
+        nombreProductos:   ' Sundae',  
+        detalle:  'Helado de crema con salsa de fresa', 
+        precio:'60.00', 
+    
+    }, 
+    //card detallesproductos
+    {    
+        nombreProductos:   ' Whopper jr',  
+        urlImage:  '', 
+        precio:'180.00', 
+    }, 
+ 
+     //card detallesproductos
+     {   
+        nombreProductos:   ' Wopper',  
+        detalle:  '', 
+        precio:'', 
     }, 
  
     
@@ -64,11 +101,13 @@ var productos=[
 
 //Funcion contenidos 
 const opcionNav = 1 ; //opcion para ver el contenido despues del inico de sesión
-const opcionLanding = 2; 
-const opcionModalIni= 3;
-const opcionModalReg = 4;
-const opcionEmpresas = 5;
-const opcionProductos = 6;
+const opcionLanding = 2;  //Landing
+const opcionModalIni= 3;//Modal inicio
+const opcionModalReg = 4;//Modal Registro
+const opcionEmpresas = 5;//Empresa
+const opcionProductos = 6; //Productos
+const opcionDetalleProducto = 7; // Detalle producto
+const opcionPagos = 8; // Pago
 
 
 function selecionContenido(opcion){
@@ -81,6 +120,8 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "none";
             document.getElementById('contenido-5').style.display = "none";
             document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
             break;
         case opcionLanding:
             document.getElementById('contenido-1').style.display = "none";
@@ -89,6 +130,8 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "none";
             document.getElementById('contenido-5').style.display = "none";
             document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
             break;
         case opcionModalIni:
             document.getElementById('contenido-1').style.display = "none";
@@ -97,6 +140,8 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "none";
             document.getElementById('contenido-5').style.display = "none";
             document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
             break;
         case opcionModalReg:
             document.getElementById('contenido-1').style.display = "none";
@@ -105,6 +150,8 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "block";
             document.getElementById('contenido-5').style.display = "none";
             document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
             break;
         case opcionEmpresas:
             document.getElementById('contenido-1').style.display = "block";
@@ -113,6 +160,7 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "none";
             document.getElementById('contenido-5').style.display = "block";
             document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "none";
             break;
         case opcionProductos:
             document.getElementById('contenido-1').style.display = "block";
@@ -121,8 +169,36 @@ function selecionContenido(opcion){
             document.getElementById('contenido-4').style.display = "none";
             document.getElementById('contenido-5').style.display = "none";
             document.getElementById('contenido-6').style.display = "block";
+            document.getElementById('contenido-7').style.display = "none";
+            document.getElementById('contenido-8').style.display = "none";
             break;
+
+
+            case opcionDetalleProducto:
+            document.getElementById('contenido-1').style.display = "block";
+            document.getElementById('contenido-2').style.display = "none";
+            document.getElementById('contenido-3').style.display = "none";
+            document.getElementById('contenido-4').style.display = "none";
+            document.getElementById('contenido-5').style.display = "none";
+            document.getElementById('contenido-6').style.display = "none";
+            document.getElementById('contenido-7').style.display = "block";
+            document.getElementById('contenido-8').style.display = "none";
+            break;
+
+
+            case opcionPagos:
+                document.getElementById('contenido-1').style.display = "block";
+                document.getElementById('contenido-2').style.display = "none";
+                document.getElementById('contenido-3').style.display = "none";
+                document.getElementById('contenido-4').style.display = "none";
+                document.getElementById('contenido-5').style.display = "none";
+                document.getElementById('contenido-6').style.display = "none";
+                document.getElementById('contenido-7').style.display = "none";
+                document.getElementById('contenido-8').style.display = "block";
+                break;   
     }
+
+    
 }
 /******************************************************************************************** */
 //Función para contenido de submenus izq
@@ -149,7 +225,10 @@ function opcionesSubmenu (opcion){
             break;
     }
 }
+
+
 //Ventana modal formulario inicio sesión
+//la accion cominesa aca 
 function modalInicio () {
         document.getElementById ('modalInicio').innerHTML += `
         <div class="modal-container ">
@@ -164,6 +243,9 @@ function modalInicio () {
     </form>
   </div> `
 }
+
+
+//Función para Registro
 function modalRegistro () {
     document.getElementById ('modalRegistro').innerHTML += `
     <div class="modal-container ">
@@ -180,38 +262,73 @@ function modalRegistro () {
 function noRecargo(event){
     event.preventDefault();
 }
+
+   
+
 //Genera las categorías Empresa
 function generarEmpresa() { 
     document.getElementById('empresa').innerHTML = ''; 
     empresas.forEach(function (emp) { 
         document.getElementById('empresa').innerHTML += `
-    <div class="card card-Emp" style="width: 18rem;" onclick="generarProductos(),selecionContenido(6)">
+    <div class="card card-Emp" style="width: 15rem;" onclick="generarProductos(),selecionContenido(6)">
+    <div class="celdaEmpresa">
         <h6>${emp.nombreEmpresa}</h6>
-        <img src="${emp.urlImage}" class="card-img-top" alt="...">
-        <div class="card-body">
-         <p class="card-text">Descripción</p>
+        </div>
+        <img src="${emp.urlImage}" class="card-img-empresa" alt="...">
+        <div>
+        </div>
+        <div class="card-body"> 
+
         </div>
     </div>
            
             `;
     }) 
 } 
-//Genera los productos de cada empresa
-function generarProductos() { 
-    document.getElementById('prod').innerHTML = ''; 
-    productos.forEach(function (producto) { 
+
+
+
+//Genera los PRODUCTOS de cada Detalle producto
+function generarDetalleProductos() { 
+    document.getElementById('detalleproducto').innerHTML = ''; 
+    detallesproductos.forEach(function (detallesproductos) { 
         document.getElementById('prod').innerHTML += `
-    <div class="card card-Emp" style="width: 18rem;">
-        <h6>${producto.nombreProductos}</h6>
-        <img src="${producto.urlImage}" class="card-img-top" alt="...">
+    <div class="card card-Emp" style="width: 2rem;">
+        <h6 class="cardP" >${detallesproductos.nombreProductos}</h6>
+        <div class="celdaprod">
+         <p ${detallesproductos.detalle}>Descripción Productos</p>
+         </div>
+        <input class="control  botonInicio" type="button" value="Ordenar">
         <div class="card-body">
-         <p class="card-text">Descripción Productos</p>
+
         </div>
     </div>
            
             `;
     }) 
 } 
+
+
+//Genera los pago
+function generarPago() { 
+    document.getElementById('credicard').innerHTML = ''; 
+    pago.forEach(function (pago) { 
+        document.getElementById('prod').innerHTML += `
+
+        
+           
+            `;
+    }) 
+} 
+
+
+
+
+
+
+//Ventana modal formulario  pago 
+
+
 //Genera contenido de notificaciones
 function GeneraNotificaciones() {
     document.getElementById('sub-notificacion').innerHTML += `
