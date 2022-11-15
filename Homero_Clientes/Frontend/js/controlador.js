@@ -93,7 +93,7 @@ var detallesproductos=[
      {   
         nombreProductos:   ' Wopper',  
         detalle:  '', 
-        precio:'', 
+        precio:'150.00', 
     }, 
  
     
@@ -203,8 +203,16 @@ function selecionContenido(opcion){
 /******************************************************************************************** */
 //Función para contenido de submenus izq
 const opcionNoti = 1;
-const opcion2 = 2;
-const opcion3 = 3;
+const Mispedidos = 2;
+const Cupones= 3;
+const Pago= 4;
+const Cuenta= 5;
+const Seguridad= 6;
+const Ayuda= 7;
+const Home= 8;
+const Cerrarseccion= 9;
+
+
 
 function opcionesSubmenu (opcion){
     switch (opcion) {
@@ -212,15 +220,126 @@ function opcionesSubmenu (opcion){
             document.getElementById('contenido-1').style.display = "block";
             document.getElementById('contenido-all-principal').style.display = "none";
             document.getElementById('sub-notificacion').style.display = "block";
-            document.getElementById('sub-opcion2').style.display = "none";
+            document.getElementById('Mispedidos').style.display = "none";
+            document.getElementById('Cupones').style.display = "none";
+            document.getElementById('Pago').style.display = "none";
+            document.getElementById('Cuenta').style.display = "none";
+            document.getElementById('Seguridad').style.display = "none";
+            document.getElementById('Ayuda').style.display = "none";
+            document.getElementById('Home').style.display = "none";
+            document.getElementById('Cerrarseccion').style.display = "none";
             break;
-        case opcion2:
+
+
+        case Mispedidos:
             document.getElementById('contenido-1').style.display = "block";
             document.getElementById('contenido-all-principal').style.display = "none";
             document.getElementById('sub-notificacion').style.display = "none";
-            document.getElementById('sub-opcion2').style.display = "block";
+            document.getElementById('Mispedidos').style.display = "block";
+            document.getElementById('Cupones').style.display = "none";
+            document.getElementById('Pago').style.display = "none";
+            document.getElementById('Cuenta').style.display = "none";
+            document.getElementById('Seguridad').style.display = "none";
+            document.getElementById('Ayuda').style.display = "none";
+            document.getElementById('Home').style.display = "none";
+            document.getElementById('Cerrarseccion').style.display = "none";
             break;
     
+            case Cupones:
+                document.getElementById('contenido-1').style.display = "block";
+                document.getElementById('contenido-all-principal').style.display = "none";
+                document.getElementById('sub-notificacion').style.display = "none";
+                document.getElementById('Mispedidos').style.display = "block";
+                document.getElementById('Cupones').style.display = "none";
+                document.getElementById('Pago').style.display = "none";
+                document.getElementById('Cuenta').style.display = "none";
+                document.getElementById('Seguridad').style.display = "none";
+                break;
+
+                case Pago:
+                document.getElementById('contenido-1').style.display = "block";
+                document.getElementById('contenido-all-principal').style.display = "none";
+                document.getElementById('sub-notificacion').style.display = "none";
+                document.getElementById('Mispedidos').style.display = "block";
+                document.getElementById('Cupones').style.display = "none";
+                document.getElementById('Pago').style.display = "none";
+                document.getElementById('Cuenta').style.display = "none";
+                document.getElementById('Seguridad').style.display = "none";
+                document.getElementById('Ayuda').style.display = "none";
+                 document.getElementById('Home').style.display = "none";
+                 document.getElementById('Cerrarseccion').style.display = "none";
+                break;
+
+                case Cuenta:
+                    document.getElementById('contenido-1').style.display = "block";
+                    document.getElementById('contenido-all-principal').style.display = "none";
+                    document.getElementById('sub-notificacion').style.display = "none";
+                    document.getElementById('Mispedidos').style.display = "block";
+                    document.getElementById('Cupones').style.display = "none";
+                    document.getElementById('Pago').style.display = "none";
+                    document.getElementById('Cuenta').style.display = "none";
+                    document.getElementById('Seguridad').style.display = "none";
+                    document.getElementById('Ayuda').style.display = "none";
+                    document.getElementById('Home').style.display = "none";
+                    document.getElementById('Cerrarseccion').style.display = "none";
+                            break;
+
+                    case Seguridad:
+                        document.getElementById('contenido-1').style.display = "block";
+                        document.getElementById('contenido-all-principal').style.display = "none";
+                        document.getElementById('sub-notificacion').style.display = "none";
+                        document.getElementById('Mispedidos').style.display = "block";
+                        document.getElementById('Cupones').style.display = "none";
+                        document.getElementById('Pago').style.display = "none";
+                        document.getElementById('Cuenta').style.display = "none";
+                        document.getElementById('Seguridad').style.display = "none";
+                        document.getElementById('Ayuda').style.display = "none";
+                        document.getElementById('Home').style.display = "none";
+                        document.getElementById('Cerrarseccion').style.display = "none";
+                        break;
+
+                        case Ayuda:
+                            document.getElementById('contenido-1').style.display = "block";
+                            document.getElementById('contenido-all-principal').style.display = "none";
+                            document.getElementById('sub-notificacion').style.display = "none";
+                            document.getElementById('Mispedidos').style.display = "block";
+                            document.getElementById('Cupones').style.display = "none";
+                            document.getElementById('Pago').style.display = "none";
+                            document.getElementById('Cuenta').style.display = "none";
+                            document.getElementById('Seguridad').style.display = "none";
+                            document.getElementById('Ayuda').style.display = "none";
+                            document.getElementById('Home').style.display = "none";
+                            document.getElementById('Cerrarseccion').style.display = "none";
+                                            break;
+
+                            case Home:
+                            document.getElementById('contenido-1').style.display = "block";
+                            document.getElementById('contenido-all-principal').style.display = "none";
+                            document.getElementById('sub-notificacion').style.display = "none";
+                            document.getElementById('Mispedidos').style.display = "block";
+                            document.getElementById('Cupones').style.display = "none";
+                            document.getElementById('Pago').style.display = "none";
+                            document.getElementById('Cuenta').style.display = "none";
+                            document.getElementById('Seguridad').style.display = "none";
+                            document.getElementById('Ayuda').style.display = "none";
+                            document.getElementById('Home').style.display = "none";
+                            document.getElementById('Cerrarseccion').style.display = "none";
+                                break;
+
+                            case Cerrarseccion:
+                            document.getElementById('contenido-1').style.display = "block";
+                            document.getElementById('contenido-all-principal').style.display = "none";
+                            document.getElementById('sub-notificacion').style.display = "none";
+                            document.getElementById('Mispedidos').style.display = "block";
+                            document.getElementById('Cupones').style.display = "none";
+                            document.getElementById('Pago').style.display = "none";
+                            document.getElementById('Cuenta').style.display = "none";
+                            document.getElementById('Seguridad').style.display = "none";
+                            document.getElementById('Ayuda').style.display = "none";
+                            document.getElementById('Home').style.display = "none";
+                            document.getElementById('Cerrarseccion').style.display = "none";
+                            break;
+
         default:
             break;
     }
