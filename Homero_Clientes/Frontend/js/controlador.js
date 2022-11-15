@@ -428,6 +428,55 @@ function generarDetalleProductos() {
 } 
 
 
+
+
+//Genera los Pago
+function generarPago() { 
+    document.getElementById('credicard').innerHTML = ''; 
+    Pago.forEach(function (pago) { 
+        document.getElementById('credicard').innerHTML += `
+    <div class="card card-Emp" style="width: 2rem;">
+        <div class="celdaPago">
+        <div class="text-imagen" style="text-align:center;">
+        <h6 class="text-tarjeta"> Agregar Tarjeta</h6>
+        <img src="../Homero_Clientes/Frontend/img/productos/2.card.png">
+        </div>
+      <div class="card m-3  " id="empresa-1" onclick="seleccionEmpresa()">
+      <div class="card-content">
+      <div class="contenedor" id="ocultar">
+          <section class="logo-tarjeta">
+            <div class=""> 
+            <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+              <div class="grupo">
+                <h4 class="text-pago">Pago</h4>
+                <br>
+                <!--numero tarjeta -->
+                <label for="inputNumero"  class="numero-tarjeta">Número Tarjeta</label>
+                <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+                </div>
+                <br>
+                <!--ccv -->
+                <div class="grupo ccv">
+                    <label for="inputCCV"  class="btn-ccv">CCV</label>
+                    <input type="text" id="inputCCV" maxlength="3">
+                  </div>
+                </div>
+                <br>
+                <button type="submit" class="btn-enviar">Finalizar Orden</button>
+            </form> 
+        </section>
+
+        </div>
+    </div>
+           
+            `;
+    }) 
+} 
+
+
+
+
+
 //Genera los pago
 function generarPago() { 
     document.getElementById('credicard').innerHTML = ''; 
