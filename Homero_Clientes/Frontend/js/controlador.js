@@ -406,16 +406,15 @@ function generarEmpresa() {
 } 
 
 
-
-//Genera los PRODUCTOS de cada Detalle producto
-function generarDetalleProductos() { 
-    document.getElementById('detalleproducto').innerHTML = ''; 
-    detallesproductos.forEach(function (detallesproductos) { 
+//Genera los PRODUCTOS
+function generarProductos() { 
+    document.getElementById('prod').innerHTML = ''; 
+    productos.forEach(function (producto) { 
         document.getElementById('prod').innerHTML += `
     <div class="card card-Emp" style="width: 2rem;">
-        <h6 class="cardP" >${detallesproductos.nombreProductos}</h6>
+        <h6 class="cardP" >${producto.nombreProductos}</h6>
         <div class="celdaprod">
-         <p ${detallesproductos.detalle}>Descripción Productos</p>
+         <p >Descripción Productos</p>
          </div>
         <input class="control  botonInicio" type="button" value="Ordenar">
         <div class="card-body">
@@ -424,8 +423,11 @@ function generarDetalleProductos() {
     </div>
            
             `;
-    }) 
+    })
 } 
+
+
+
 
 
 
